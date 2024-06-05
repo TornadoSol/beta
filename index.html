@@ -1,0 +1,722 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <!-- Primary Meta Tags -->
+    <title>Solana Mixer | SOL Mixing Service</title>
+    <meta name="title" content="TornadoSol | SOL Mixing Service">
+    <meta name="description" content="TornadoSol | The first mixing service on the Solana blockchain. 100% anonymous, simple use and with very low fee ! Service also known as Solana Tumbler, Crypto Tumbler.">
+    <meta name="keywords" content="solana, mixer, solana tumbler, TornadoSol, anonymous, mixing service, mixing, solana mixer, tumbler, sol">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <style data-tag="reset-style-sheet">
+    html {
+        line-height: 1.15;
+    }
+    body {
+        margin: 0;
+    }
+    * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+    }
+    p,
+    li,
+    ul,
+    pre,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+        padding: 0;
+    }
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+    }
+    button,
+    select {
+        text-transform: none;
+    }
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+        -webkit-appearance: button;
+    }
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+    }
+    button:-moz-focus,
+    [type="button"]:-moz-focus,
+    [type="reset"]:-moz-focus,
+    [type="submit"]:-moz-focus {
+        outline: 1px dotted ButtonText;
+    }
+    a {
+        color: inherit;
+        text-decoration: inherit;
+    }
+    input {
+        padding: 2px 4px;
+    }
+    img {
+        display: block;
+    }
+</style>
+<style data-tag="default-style-sheet">
+    html {
+        font-family: archivo;
+        font-size: 1.1em;
+    }
+
+    body {
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+    }
+</style>
+<link rel="shortcut icon" href="playground_assets/logo.png" type="icon/png" sizes="32x32">
+<link rel="shortcut icon" href="playground_assets/logo.gif" type="icon/gif" sizes="32x32">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800&amp;display=swap" data-tag="font">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" data-tag="font">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" data-tag="font">
+<link rel="stylesheet" href="styles/style.css">
+    <link href="styles/home.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="night">
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+    </div>
+
+    <div>
+        <div class="home-container">
+            <!-- header1-header header1-root-class-name1 header1-nav header1-navlink header1-link header1-link navlink header1-navlink1 header1-text1 -->
+<style>
+    header {
+        width: 100vw;
+    }
+    body .navbar {
+        display: flex;
+        width: 100%;
+        height: 80px;
+        font-family: "Source Sans Pro", sans-serif;
+    }
+    body .navbar .navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px;
+        float: left;
+        user-select: none;
+    }
+    body .navbar .navbar-brand img {
+        height: 80%;
+    }
+    body .navbar .link-group {
+        display: flex;
+        float: right;
+        width: 100%;
+        height: 100%;
+        justify-content: end;
+        transition: 1s;
+    }
+    body .navbar .link-group ul {
+        position: relative;
+        right: 5%;
+        float: right;
+        list-style: none;
+        height: 100%;
+    }
+    body .navbar .link-group ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        float: left;
+        padding: 10px;
+        min-height: 100%;
+        font-size: 20px;
+        font-weight: 600;
+        cursor: pointer;
+        margin: 0px 10px;
+    }
+    body .navbar .link-group ul li a {
+        text-decoration: none;
+        color: #cc704b;
+    }
+    body .navbar .link-group ul li a span {
+        display: none;
+    }
+    body .navbar .link-group ul li:hover {
+        border-bottom: 2px solid #cc704b;
+    }
+    .nav-link {
+        text-align: center;
+    }
+    .logo {
+        height: 50% !important;
+        margin-left: 1em;
+    }
+    .logotext {
+        margin-left: 5px;
+        margin-right: 0.5em;
+        font-weight: 900;
+    }
+</style>
+<header>
+    <div class="navbar">
+        <div class="navbar-brand">
+            <div class="logo wrapper-heading-gradient">
+                <a class="a-gradient logotext" href="">TornadoSol</a>
+                <a class="a-gradient animate-gradient logotext" href="">TornadoSol</a>
+                <div class="style w-embed">
+                    <style>
+                        .animate-gradient {
+                            background-size: 50%;
+                            animation: animate 4s ease-in-out infinite;
+                        }
+
+                        @keyframes animate {
+                            0% {
+                                background-position: -100%;
+                            }
+
+                            30% {
+                                background-position: 100%;
+                            }
+
+                            100% {
+                                background-position: -100%;
+                            }
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+        <div id="link-group" class="link-group">
+            <ul>
+                <li class="nav-link">
+                    <div class="wrapper-heading-gradient" style="zoom: 0.7">
+                        <a class="a-gradient heading2" href="#">NFTOOLS</a>
+                        <a class="a-gradient animate-gradient heading2" href="#">NFTOOLS</a>
+                        <div class="style w-embed">
+                            <style>
+                                .animate-gradient {
+                                    background-size: 50%;
+                                    animation: animate 4s ease-in-out infinite;
+                                }
+
+                                @keyframes animate {
+                                    0% {
+                                        background-position: -100%;
+                                    }
+
+                                    30% {
+                                        background-position: 100%;
+                                    }
+
+                                    100% {
+                                        background-position: -100%;
+                                    }
+                                }
+                            </style>
+                        </div>
+
+                        <p class="content1" style="color: white">Coming Soon</p>
+                    </div>
+                </li>
+                <li class="nav-link">
+                    <div class="wrapper-heading-gradient">
+                        <a class="a-gradient heading2" href="">MIX</a>
+                        <a class="a-gradient animate-gradient heading2" href="">MIX</a>
+                        <div class="style w-embed">
+                            <style>
+                                .animate-gradient {
+                                    background-size: 50%;
+                                    animation: animate 4s ease-in-out infinite;
+                                }
+
+                                @keyframes animate {
+                                    0% {
+                                        background-position: -100%;
+                                    }
+
+                                    30% {
+                                        background-position: 100%;
+                                    }
+
+                                    100% {
+                                        background-position: -100%;
+                                    }
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<script type="text/javascript">
+    let open_btn = document.getElementById("open");
+    let close_btn = document.getElementById("close");
+    let link_group = document.getElementById("link-group");
+    function menuOpen() {
+        open_btn.style.display = "none";
+        close_btn.style.display = "block";
+        link_group.style.right = "0%";
+    }
+    function menuClose() {
+        open_btn.style.display = "block";
+        close_btn.style.display = "none";
+        link_group.style.right = "-100%";
+    }
+</script>
+            <div class="hero-hero hero-root-class-name">
+                <div class="hero-text wrapper-heading-gradient">
+                    <a class="a-gradient heading1">Mix your coins anonymously. (Launching soon)</a>
+                    <a class="a-gradient animate-gradient heading1">Mix your coins anonymously. (Launching soon)</a>
+                    <div class="style w-embed">
+                        <style>
+                            .animate-gradient {
+                                background-size: 50%;
+                                animation: animate 4s ease-in-out infinite;
+                            }
+
+                            @keyframes animate {
+                                0% {
+                                    background-position: -100%;
+                                }
+
+                                30% {
+                                    background-position: 100%;
+                                }
+
+                                100% {
+                                    background-position: -100%;
+                                }
+                            }
+                        </style>
+                    </div>
+                </div>
+                <span class="hero-text1 content2">
+                    <span>
+                        Send us your SOL, select a time and we will send you
+                        other coins that are completely disconnected from
+                        you !
+                    </span>
+                </span>
+                <div class="hero-btn-group">
+                    <a href="" class="hero-navlink content2"><span>MIX</span></a>
+                    <button class="hero-button button" onclick="location.href='#faq'">
+                        <a href="#faq" class="hero-text2 content2"><span>FAQ</span></a>
+                    </button>
+                </div>
+                 <div class="additional-info hero-text1 content2" style="border: 2px solid white; padding: 10px 10px; border-radius: 5px; width: auto">
+                    <p>
+                        LIVE ON PUMPFUN <br><a style="color: gray;" href="https://t.me/tornadosoltoken">t.me/tornadosoltoken
+                        </a>
+                    </p>
+
+                </div>
+            </div>
+            <div id="process" class="home-steps">
+                <div class="home-container01">
+                    <h1 class="home-text heading1"><span>Process</span></h1>
+                    <span class="home-text02 heading3">Easy isn't it ?</span>
+                    <div class="home-container02">
+                        <div class="home-step">
+                            <div class="home-container03">
+                                <div class="home-line"></div>
+                                <div class="home-container04">
+                                    <svg viewBox="0 0 1024 1024" class="home-icon">
+                                        <path d="M634 558q92-64 92-174 0-88-63-151t-151-63-151 63-63 151q0 46 27 96t65 78l36 26v98h172v-98zM512 86q124 0 211 87t87 211q0 156-128 244v98q0 18-12 30t-30 12h-256q-18 0-30-12t-12-30v-98q-128-88-128-244 0-124 87-211t211-87zM384 896v-42h256v42q0 18-12 30t-30 12h-172q-18 0-30-12t-12-30z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="home-line1"></div>
+                            </div>
+                            <div class="home-container05">
+                                <h1 class="home-text03 heading2">
+                                    <span>Send</span>
+                                </h1>
+                                <span class="home-text05 content2">
+                                    <span>Send us your Solana</span>
+                                    <br>
+                                    <span></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="home-step1">
+                            <div class="home-container06">
+                                <div class="home-line2"></div>
+                                <div class="home-container07">
+                                    <svg viewBox="0 0 1024 1024" class="home-icon2">
+                                        <path d="M746 512q26 0 45-18t19-46-19-46-45-18-45 18-19 46 19 46 45 18zM618 342q26 0 45-19t19-45-19-45-45-19-45 19-19 45 19 45 45 19zM406 342q26 0 45-19t19-45-19-45-45-19-45 19-19 45 19 45 45 19zM278 512q26 0 45-18t19-46-19-46-45-18-45 18-19 46 19 46 45 18zM512 128q158 0 271 100t113 242q0 88-63 150t-151 62h-74q-28 0-46 19t-18 45q0 22 16 42t16 44q0 28-18 46t-46 18q-160 0-272-112t-112-272 112-272 272-112z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="home-line3"></div>
+                            </div>
+                            <div class="home-container08">
+                                <h1 class="home-text08 heading2">Mix</h1>
+                                <span class="home-text09 content2">We mix your coins.</span>
+                            </div>
+                        </div>
+                        <div class="home-step2">
+                            <div class="home-container09">
+                                <div class="home-line4"></div>
+                                <div class="home-container10">
+                                    <svg viewBox="0 0 1024 1024" class="home-icon4">
+                                        <path d="M480 64c-265.096 0-480 214.904-480 480 0 265.098 214.904 480 480 480 265.098 0 480-214.902 480-480 0-265.096-214.902-480-480-480zM751.59 704c8.58-40.454 13.996-83.392 15.758-128h127.446c-3.336 44.196-13.624 87.114-30.68 128h-112.524zM208.41 384c-8.58 40.454-13.996 83.392-15.758 128h-127.444c3.336-44.194 13.622-87.114 30.678-128h112.524zM686.036 384c9.614 40.962 15.398 83.854 17.28 128h-191.316v-128h174.036zM512 320v-187.338c14.59 4.246 29.044 11.37 43.228 21.37 26.582 18.74 52.012 47.608 73.54 83.486 14.882 24.802 27.752 52.416 38.496 82.484h-155.264zM331.232 237.516c21.528-35.878 46.956-64.748 73.54-83.486 14.182-10 28.638-17.124 43.228-21.37v187.34h-155.264c10.746-30.066 23.616-57.68 38.496-82.484zM448 384v128h-191.314c1.88-44.146 7.666-87.038 17.278-128h174.036zM95.888 704c-17.056-40.886-27.342-83.804-30.678-128h127.444c1.762 44.608 7.178 87.546 15.758 128h-112.524zM256.686 576h191.314v128h-174.036c-9.612-40.96-15.398-83.854-17.278-128zM448 768v187.34c-14.588-4.246-29.044-11.372-43.228-21.37-26.584-18.74-52.014-47.61-73.54-83.486-14.882-24.804-27.75-52.418-38.498-82.484h155.266zM628.768 850.484c-21.528 35.876-46.958 64.746-73.54 83.486-14.184 9.998-28.638 17.124-43.228 21.37v-187.34h155.266c-10.746 30.066-23.616 57.68-38.498 82.484zM512 704v-128h191.314c-1.88 44.146-7.666 87.040-17.28 128h-174.034zM767.348 512c-1.762-44.608-7.178-87.546-15.758-128h112.524c17.056 40.886 27.344 83.806 30.68 128h-127.446zM830.658 320h-95.9c-18.638-58.762-44.376-110.294-75.316-151.428 42.536 20.34 81.058 47.616 114.714 81.272 21.48 21.478 40.362 44.938 56.502 70.156zM185.844 249.844c33.658-33.658 72.18-60.932 114.714-81.272-30.942 41.134-56.676 92.666-75.316 151.428h-95.898c16.138-25.218 35.022-48.678 56.5-70.156zM129.344 768h95.898c18.64 58.762 44.376 110.294 75.318 151.43-42.536-20.34-81.058-47.616-114.714-81.274-21.48-21.478-40.364-44.938-56.502-70.156zM774.156 838.156c-33.656 33.658-72.18 60.934-114.714 81.274 30.942-41.134 56.678-92.668 75.316-151.43h95.9c-16.14 25.218-35.022 48.678-56.502 70.156z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="home-line5"></div>
+                            </div>
+                            <div class="home-container11">
+                                <h1 class="home-text10 heading2">
+                                    Receive
+                                </h1>
+                                <span class="home-text11 content2">
+                                    <span>Retrieve your coins to multiple
+                                        wallets</span>
+                                    <br>
+                                    <span></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="features" class="home-features">
+                <h1 class="home-text14">Features</h1>
+                <div class="home-container12">
+                    <div class="feature-card-feature-card feature-card-root-class-name1">
+                        <svg viewBox="0 0 1024 1024" class="feature-card-icon">
+                            <path d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z">
+                            </path>
+                        </svg>
+                        <div class="feature-card-container">
+                            <h2 class="feature-card-text heading3">
+                                <span>100% Anonymous</span>
+                            </h2>
+                            <span class="feature-card-text1 content">
+                                <span>
+                                    At TornadoSol, we prioritize your privacy. When you use our service, the
+                                    cryptocurrency you receive will have no connection to the initial crypto you sent
+                                    us. We take your privacy seriously, which is why all records of completed
+                                    transactions are systematically purged within 24 hours following a successful mixing
+                                    process. Furthermore, the link allowing you to check the status of your mixing
+                                    process will also be automatically removed after 24 hours, or you can manually
+                                    request its deletion by contacting our support team.
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="feature-card-feature-card feature-card-root-class-name3">
+                        <svg viewBox="0 0 1024 1024" class="feature-card-icon">
+                            <path d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z">
+                            </path>
+                        </svg>
+                        <div class="feature-card-container">
+                            <h2 class="feature-card-text heading3">
+                                <span>Simple !</span>
+                            </h2>
+                            <span class="feature-card-text1 content">
+                                <span>
+                                    Our platform is designed to offer an exceptionally user-friendly experience. Mixing
+                                    your crypto with us is hassle-free and straightforward, eliminating any potential
+                                    concerns.
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="feature-card-feature-card feature-card-root-class-name2">
+                        <svg viewBox="0 0 1024 1024" class="feature-card-icon">
+                            <path d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z">
+                            </path>
+                        </svg>
+                        <div class="feature-card-container">
+                            <h2 class="feature-card-text heading3">
+                                <span>Low Fee</span>
+                            </h2>
+                            <span class="feature-card-text1 content">
+                                <span>We believe in providing value to our users. That's why we offer an extremely
+                                    competitive fee structure, charging only 1% of the transaction amount plus a minimal
+                                    fee of 0.1 SOL. To help you estimate the cost of your transaction, we provide a
+                                    user-friendly calculator, ensuring transparency and predictability in your mixing
+                                    experience. This way, you can plan your transactions with confidence, knowing
+                                    exactly what to expect in terms of fees.</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="feature-card-feature-card feature-card-root-class-name">
+                        <svg viewBox="0 0 1024 1024" class="feature-card-icon">
+                            <path d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z">
+                            </path>
+                        </svg>
+                        <div class="feature-card-container">
+                            <h2 class="feature-card-text heading3">
+                                <span>No Logs</span>
+                            </h2>
+                            <span class="feature-card-text1 content">
+                                <span>
+                                    Your privacy is of utmost importance to us, and we want you to use TornadoSol with
+                                    confidence. We do not retain any transaction-related details beyond 24 hours. Rest
+                                    assured, your information is securely handled and promptly deleted after the mixing
+                                    operation is completed.
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="faq" class="f-a-q-f-a-q">
+                <h1 class="f-a-q-text heading1"><span>FAQ</span></h1>
+                <div class="f-a-q-container">
+                    <div class="f-a-q-element-feature-card f-a-q-element-root-class-name">
+                        <svg viewBox="0 0 1024 1024" class="f-a-q-element-icon">
+                            <path d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z">
+                            </path>
+                        </svg>
+                        <div class="f-a-q-element-container">
+                            <h2 class="f-a-q-element-text heading3">
+                                <span>What is TornadoSol ?</span>
+                            </h2>
+                            <span class="f-a-q-element-text1 content">
+                                <span>
+                                    TornadoSol is a high-volume cryptocurrency mixing service tailored to Solana users
+                                    and holders. By using our platform, you gain the ability to obscure the origin of
+                                    your SOL tokens, ensuring anonymity on the blockchain.
+                                </span>
+                            </span>
+                            <span class="f-a-q-element-text1 content">
+                                <span>
+                                    Our service is optimized for both small and large transactions, and in the unlikely
+                                    event of Solana main-net downtime, we prioritize swift transaction rescheduling.
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="f-a-q-feature-card">
+                        <svg viewBox="0 0 1024 1024" class="f-a-q-icon">
+                            <path d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z">
+                            </path>
+                        </svg>
+                        <div class="f-a-q-container1">
+                            <h2 class="f-a-q-text1 heading3">
+
+                                <span>How do I use TornadoSol ?</span>
+                            </h2>
+                            <span class="f-a-q-text2 content">
+                                <span>1. Input your deposit address/addresses.</span>
+                            </span>
+                            <span class="f-a-q-text3 content">
+                                <span>2. Set your desired input delay; the longer, the better for privacy.
+                                </span>
+                            </span>
+                            <span class="f-a-q-text4 content">
+                                <span>3. Save your session token for reference.
+                                </span>
+                            </span>
+                            <span class="f-a-q-text5 content">
+                                <span>4. Send your SOL tokens to the generated address (minimum 1 SOL).
+
+                                </span>
+                            </span>
+                            <span class="f-a-q-text6 content">
+                                <span>5. Receive your freshly mixed SOL tokens in one or multiple wallets.
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="f-a-q-element-feature-card f-a-q-element-root-class-name1">
+                        <svg viewBox="0 0 1024 1024" class="f-a-q-element-icon">
+                            <path d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z">
+                            </path>
+                        </svg>
+                        <div class="f-a-q-element-container">
+                            <h2 class="f-a-q-element-text heading3">
+                                <span>How much time does it take ?</span>
+                            </h2>
+                            <span class="f-a-q-element-text1 content">
+                                <span>
+                                    Typically, the entire process is completed in less than 15 minutes. Acknowledgment
+                                    of your deposit into the generated account may take up to 15 minutes. If your
+                                    deposit is not acknowledged after this period, please contact our support team with
+                                    your session ID for assistance.
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="f-a-q-element-feature-card f-a-q-element-root-class-name2">
+                        <svg viewBox="0 0 1024 1024" class="f-a-q-element-icon">
+                            <path d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z">
+                            </path>
+                        </svg>
+                        <div class="f-a-q-element-container">
+                            <h2 class="f-a-q-element-text heading3">
+                                <span>How anonymous am I ?</span>
+                            </h2>
+                            <span class="f-a-q-element-text1 content">
+                                <span>
+                                    TornadoSol ensures complete anonymity by adhering to strict privacy practices. We do
+                                    not retain logs or user information. Any data stored on our servers is retained only
+                                    for as long as necessary to complete the transaction, and everything is
+                                    automatically deleted within 24 hours after the mixing operation.
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="f-a-q-element-feature-card f-a-q-element-root-class-name5">
+                        <svg viewBox="0 0 1024 1024" class="f-a-q-element-icon">
+                            <path d="M809.003 291.328l-297.003 171.819-297.003-171.819 275.456-157.397c4.779-2.731 9.899-4.48 15.147-5.333 9.301-1.451 18.987 0.128 27.904 5.291zM491.776 979.669c6.016 3.243 12.928 5.077 20.224 5.077 7.381 0 14.336-1.877 20.395-5.163 15.189-2.475 29.909-7.68 43.392-15.36l298.709-170.709c26.368-15.232 45.269-38.315 55.424-64.597 5.675-14.592 8.619-30.165 8.747-46.251v-341.333c0-20.395-4.821-39.723-13.397-56.917-0.939-3.029-2.219-5.973-3.883-8.832-1.963-3.371-4.267-6.357-6.912-8.96-1.323-1.835-2.731-3.669-4.139-5.419-9.813-12.203-21.845-22.528-35.456-30.507l-299.051-170.88c-26.027-15.019-55.467-19.84-83.328-15.531-15.531 2.432-30.507 7.637-44.288 15.488l-298.709 170.709c-16.341 9.429-29.824 21.888-40.149 36.267-2.56 2.56-4.864 5.547-6.784 8.832-1.664 2.901-2.987 5.888-3.925 8.96-1.707 3.456-3.243 6.955-4.608 10.496-5.632 14.635-8.576 30.208-8.704 45.995v341.632c0.043 30.293 10.581 58.197 28.331 80.128 9.813 12.203 21.845 22.528 35.456 30.507l299.051 170.88c13.824 7.979 28.587 13.099 43.605 15.445zM469.333 537.045v340.949l-277.12-158.336c-4.736-2.773-8.832-6.315-12.16-10.411-5.931-7.381-9.387-16.512-9.387-26.581v-318.379zM554.667 877.995v-340.949l298.667-172.757v318.379c-0.043 5.163-1.067 10.496-2.987 15.445-3.413 8.789-9.6 16.384-18.176 21.333z">
+                            </path>
+                        </svg>
+                        <div class="f-a-q-element-container">
+                            <h2 class="f-a-q-element-text heading3">
+                                <span>How can I contact you ?</span>
+                            </h2>
+                            <span class="f-a-q-element-text1 content">
+                                <span>
+                                    For any issues or inquiries, please reach out to us via email. Don't forget to
+                                    include your session ID for prompt assistance and support. Your satisfaction and
+                                    privacy are our top priorities.
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer-footer footer-root-class-name1">
+    <img alt="solanalogo" title="solanalogo" src="playground_assets/logo2-1500h.png" class="footer-image">
+    <span class="footer-text">
+        <span>© 2024 TornadoSol</span>
+    </span>
+    <a href="" class="footer-link">
+        <span></span>
+    </a>
+</footer>
+<style>
+    .footer-footer {
+        width: 100%;
+        display: flex;
+        position: relative;
+        max-width: var(--dl-size-size-maxwidth);
+        align-items: center;
+        padding-top: var(--dl-space-space-twounits);
+        padding-left: var(--dl-space-space-threeunits);
+        padding-right: var(--dl-space-space-threeunits);
+        padding-bottom: var(--dl-space-space-twounits);
+        justify-content: space-between;
+    }
+
+    .footer-image {
+        height: 2rem;
+        object-fit: cover;
+    }
+
+    .footer-text {
+        color: var(--dl-color-gray-white);
+    }
+
+    .footer-link {
+        color: var(--dl-color-gray-white);
+        text-decoration: none;
+    }
+
+    .footer-root-class-name {
+        height: var(--dl-size-size-medium);
+        margin-top: auto;
+    }
+
+    .footer-root-class-name1 {
+        height: var(--dl-size-size-medium);
+        margin-top: auto;
+    }
+
+    .footer-root-class-name2 {
+        height: var(--dl-size-size-medium);
+        margin-top: auto;
+    }
+
+    .footer-root-class-name3 {
+        height: var(--dl-size-size-medium);
+        margin-top: auto;
+    }
+
+    @media (max-width: 767px) {
+        .footer-footer {
+            padding-left: var(--dl-space-space-twounits);
+            padding-right: var(--dl-space-space-twounits);
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-left: var(--dl-space-space-unit);
+            margin-right: var(--dl-space-space-unit);
+        }
+    }
+
+    @media (max-width: 479px) {
+        .footer-footer {
+            padding: var(--dl-space-space-unit);
+            flex-direction: column;
+        }
+
+        .footer-image {
+            margin-bottom: var(--dl-space-space-unit);
+        }
+
+        .footer-text {
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: var(--dl-space-space-unit);
+        }
+    }
+</style>
+        </div>
+    </div>
+<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+
+</body></html>
